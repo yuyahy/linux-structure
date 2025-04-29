@@ -1,0 +1,23 @@
+{
+    "name": "linux-structure",
+    "build": {
+        "dockerfile": "Dockerfile", // Dockerfile を指定
+        "context": "."
+    },
+    "features": {},
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-python.python"
+            ]
+        }
+    }
+}
