@@ -11,5 +11,13 @@
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
     ],
-    "remoteUser": "root"
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-python.python"
+            ]
+        }
+    }
 }
