@@ -21,6 +21,7 @@ RUN apt update && apt install -y \
     jq \
     docker.io \
     containerd \
+    psmisc \
     libvirt-daemon-system && \
     ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime && \
     dpkg-reconfigure --frontend noninteractive tzdata && \
