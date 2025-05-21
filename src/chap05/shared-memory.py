@@ -9,6 +9,7 @@ PAGE_SIZE = 4096
 
 data = 1000
 print("子プロセス生成前のデータの値: {}".format(data))
+# 共有メモリ
 shared_memory = mmap.mmap(-1, PAGE_SIZE, flags=mmap.MAP_SHARED)
 
 shared_memory[0:8] = data.to_bytes(8, byteorder)
